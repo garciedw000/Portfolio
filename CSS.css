@@ -2,31 +2,39 @@ h1 {
     text-align: center;
     color: white;
 }
+
 p {
     text-align: center;
     color: white;
 }
-h2{
+
+h2 {
     color: white;
+}
+
+h3{
+  color: white;
 }
 
 input{
     color: black;
+    width: 50%;
 }
 
 form {
     color: white;
 }
+
 button {
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    width: 200px;
+    height: 65px;
 
-    width: 120px;
-    height: 50px;
+    background-color: White;
 
-    background-color: Yellow;
+}
 
+.buttonText{
+    color:black;
 }
 
 .flex{
@@ -34,20 +42,24 @@ button {
     display: flex;
 
     justify-content: space-between;
-    
+
+
 }
 
+
 .head {
-    background-image: url("https://t3.ftcdn.net/jpg/04/40/47/80/360_F_440478068_3epkyuEJf9itdwsgK4ZR5NWZ5PVIx1Yq.jpg");
+    background-image: url("https://removal.ai/wp-content/uploads/2021/09/black-background-08-vecteezy.png");
   
     
     background-position: center;
 
-    height: 100%;
+    height: 80%;
   
     background-repeat: no-repeat;
 
     background-size: cover;
+
+    font-size: 300%;
 
   }
 
@@ -69,15 +81,30 @@ button {
 
 }
 
+.aboutMeBio{
+    float: left;
+    text-align: left;
+    width: 65%;
+}
+
+.aboutMeImage{
+  float: right;
+  text-align: left;
+  width: 35%;
+}
+
+
 
 .Projects {
     text-align: center;
 
-    background-image: url("https://wallpapercave.com/wp/wp7229180.png");
+    background-image: url("https://media.istockphoto.com/vectors/dark-abstract-metallic-background-with-slanting-lines-black-and-grey-vector-id864415832?k=20&m=864415832&s=612x612&w=0&h=PMSeXDxZX75z5Y_t-aAJ-HOV4duGuj7pe_F8CPNSQsQ=");
 
     background-position: center;
 
-    height: 100%;
+    height: 120%;
+
+    width: 100%;
   
     background-repeat: no-repeat;
 
@@ -88,16 +115,17 @@ button {
 .Contact {
     text-align: left;
 
-    background-image: url("https://media.istockphoto.com/photos/the-black-and-silver-are-light-gray-with-white-the-gradient-is-the-picture-id1332097112?b=1&k=20&m=1332097112&s=170667a&w=0&h=D_26WN2nM805ssHpKsrqFe9mE63_j2bNefybNF0wOLw=");
-
+    background-color: black;
     
     background-position: center;
 
-    height: 75%;
+    height: 100%;
+    
   
     background-repeat: no-repeat;
 
     background-size: cover;
+
 
 }
 
@@ -105,7 +133,7 @@ button {
 body, html {
     height: 100%;
     background-color: black;
-
+    scroll-behavior: smooth;
   }
 
  
@@ -114,5 +142,136 @@ body, html {
     color:black;
 }
 
+  .bioImage{
+    width: 75%;
+    height: 85%;
+    display: block;
+    float: right;
+  }
+
+  .container{
+    width: 50%;
+  }
+
+  .input {
+    width: 50%;
+  }
+
+  .logos{
+    text-align: center;
+    justify-content: space-between;
+    float: right;
+    object-fit: cover;
+  }
+
+
+  .Bio:after {
+    content: "";
+    display: table;
+    clear: both;
+    column-gap: 50px;
+  }
+
+  .classProject{
+    float: left;
+    display: block;
+  }
+
+  .projectImg{
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+
   
- 
+  .description{
+    text-align: right;
+    display: block;
+    float: right;
+  }
+
+  .projectName{
+    text-align: center;
+    display: block;
+    float: center;
+  }
+  
+
+  .projectDiv{
+    float: left;
+    width: 33.3%;
+  }
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+  .animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #1b9c01 33%,
+    #ffffff 50%,
+    #db0303 33%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3.5s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+.credits{
+  background-color: black;
+  color:white;
+  height: 25%
+}
+
+body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ce1800ad;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f257;
+  padding: 20px;
+}
